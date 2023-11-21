@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".activity.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 用户名 -->
+            <EditText
+                android:id="@+id/editTextRegisterUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLength="12"
+                android:hint="@string/username_hint"
+                android:autofillHints="username" />
+
+            <!-- 密码 -->
+            <EditText
+                android:id="@+id/editTextRegisterPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                android:maxLength="12"
+                android:autofillHints="password" />
+
+            <!-- 性别 -->
+            <RadioGroup
+                android:id="@+id/radioGroupGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/male" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/female" />
+            </RadioGroup>
+
+            <!-- 学院 -->
+            <Spinner
+                android:id="@+id/spinnerCollege"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/choose_college"
+                android:entries="@array/college_array" />
+
+            <!-- 专业 -->
+            <EditText
+                android:id="@+id/editTextMajor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/major_text"
+                android:inputType="text" />
+
+            <!-- 邮箱-->
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:autofillHints="emailAddress" />
+
+            <!-- 提交按钮 -->
+            <Button
+                android:id="@+id/buttonDoRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/submit" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

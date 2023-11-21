@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="gender_hint">Gender</string>
+    <string name="login_button_text">Login</string>
+    <string name="register_button_text">Register</string>
+
+    <string name="college_text">College</string>
+    <string name="gender_text">Gender</string>
+    <string name="major_text">Major</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="email">Email</string>
+    <string name="complete">Complete</string>
+    <string name="submit">Complete Registration</string>
+    <string name="choose_college">Please choose an item</string>
+
+</resources>
+
+
